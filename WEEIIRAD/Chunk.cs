@@ -11,9 +11,9 @@ namespace WEEIIRAD
     {
         public static readonly int XSize = 16, YSize = 16, ZSize = 16;
         public Block[,,] Blocks = new Block[XSize, YSize, ZSize];
-        public int[] Position;
+        public Vec2int Position;
 
-        public Chunk(int[] Position, int GenerationType)
+        public Chunk(Vec2int Position, int GenerationType)
         {
             this.Position = Position;
             if (GenerationType == 0) {
